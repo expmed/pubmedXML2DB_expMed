@@ -1,6 +1,7 @@
 # PubMed XML to Database Converter
 
-This project is designed to parse XML files from PubMed and store the extracted information into a SQL database. It handles publication, author, and affiliation data, transforming and storing each element efficiently.
+This project is designed to parse XML files from PubMed and store the extracted information into a SQL database.
+Parser is not complete but adds more information than the parsers available by default in biopython.
 
 ## Features
 
@@ -8,6 +9,9 @@ This project is designed to parse XML files from PubMed and store the extracted 
 - Transforms data for SQL compatibility.
 - Dynamically creates tables for publications, authors, and affiliations.
 - Utilizes global counters to assign unique IDs to authors and affiliations.
+    - Affiliations have been enhanced and parsed where possible.
+    - Authors are not disambiguated.
+- Generates a single DB with three tables. Authors, Papers and Affiliations
 
 ## Prerequisites
 
@@ -26,7 +30,7 @@ Navigate to the cloned directory:
 
 Install the required packages:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Usage
 
@@ -36,7 +40,7 @@ Replace `[path_to_pubmed_XML_files]` with the path to your directory containing 
 
 For example:
 
-python pubmedXML2DB.py '/path/to/XML_files'
+`python pubmedXML2DB.py '/path/to/XML_files'`
 
 ## Contributing
 
