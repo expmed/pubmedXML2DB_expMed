@@ -22,7 +22,7 @@ Clone this repository to your local machine:
 
 Navigate to the cloned directory:
 
-cd pubmed-xml-to-db
+`cd pubmed-xml-to-db`
 
 Install the required packages:
 
