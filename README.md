@@ -69,9 +69,8 @@ Contributions to the PubMed XML to Database Converter are welcome. If you have a
 
 Don't forget to give the project a star! Thanks again!
 
-## License
+## Citing
 
-Distributed under the MIT License. See `LICENSE` for more information.
 Please cite accordingly if used. 
 
 ## Contact
