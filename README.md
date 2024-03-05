@@ -42,6 +42,22 @@ For example:
 
 `python pubmedXML2DB.py '/path/to/XML_files'`
 
+## Affiliation Parsing with `parseAffiliations.py`
+
+The `parseAffiliations.py` script is designed to parse and process affiliation information from PubMed XML files. This script plays a crucial role in extracting detailed information from affiliation text, such as the department, institution, location, country, and contact information. It works by fetching raw affiliation data in batches from the `affiliations` table, parsing each affiliation, and then storing the parsed data in a structured format into the `affiliations_parsed` table.
+
+### Key Features
+
+- **Batch Processing**: Handles large volumes of affiliation data by processing them in manageable batches.
+- **Data Enrichment**: Parses the raw affiliation text to extract structured information, including department names, institutions, geographic locations, and contact details.
+- **Error Handling**: Gracefully handles and logs errors for affiliations that cannot be parsed.
+
+### Usage
+
+This script is executed as part of the overall data processing pipeline and relies on the presence of raw affiliation data in the database. It automatically processes all available data and populates the `affiliations_parsed` table with the enriched affiliation information.
+
+For developers looking to understand the parsing logic or extend the parsing capabilities, the script provides a clear template for how affiliation data can be extracted, transformed, and stored efficiently.
+
 ## Contributing
 
 Contributions to the PubMed XML to Database Converter are welcome. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
