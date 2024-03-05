@@ -1,6 +1,7 @@
-import pandas as pd
-import time
-import argparse
+import pdb # Import Python debugger
+import pandas as pd # Import pandas for data manipulation
+import time # Import time for performance metrics
+import argparse # Import argparse for command-line parsing
 
 # Import custom functions from local modules
 from models.database import store_in_SQL, create_dynamic_tables, transform_pubications_for_SQL, transform_authors_for_SQL
@@ -53,7 +54,7 @@ def process_file(file, count, AuthorIDCounter, AffiliationIDCounter):
     return AuthorIDCounter, AffiliationIDCounter
 
 if __name__ == "__main__":
-
+    #PATH FOR DEBUG: '/storage/geneGinie/ncbi_ftp_data/pubmed/XML'
     parser = argparse.ArgumentParser(description="Pubmed XML parser. Generates a sqlite database from XML pubmed files")
     parser.add_argument('xml_path', type=str, help='Path to pubmed XML files')
     args = parser.parse_args()

@@ -54,9 +54,14 @@ The `parseAffiliations.py` script is designed to parse and process affiliation i
 
 ### Usage
 
-This script is executed as part of the overall data processing pipeline and relies on the presence of raw affiliation data in the database. It automatically processes all available data and populates the `affiliations_parsed` table with the enriched affiliation information.
+This script is to be executed after the generation of the database. Requires the Affiliations table to exist. It automatically processes all available data and populates the `affiliations_parsed` table with the enriched affiliation information. The script makes use of https://github.com/titipata/affiliation_parser
 
 For developers looking to understand the parsing logic or extend the parsing capabilities, the script provides a clear template for how affiliation data can be extracted, transformed, and stored efficiently.
+
+### External Dependencies
+
+This script relies on `affiliation_parser`, a library not available on PyPI, which is installed directly from its GitHub repository as specified in `requirements.txt`. Ensure you have Git installed and accessible in your path to enable pip to clone and install this dependency.
+
 
 ## Contributing
 
