@@ -1,6 +1,10 @@
+# GeneGinie Project
+
+[Project Overview and architecture information](https://drive.google.com/file/d/1LLVk6F5CWMrpBzZxysWPCxlLPgrhoW2i/view?usp=sharing) 
+
 # PubMed XML to Database Converter
 
-This project is designed to parse XML files from PubMed and store the extracted information into a SQL database.
+This repository is part of the GeneGinie Project. The code is designed to parse XML files from PubMed and store the extracted information into a SQL database.
 Parser is not complete but adds more information than the parsers available by default in biopython.
 
 ## Features
