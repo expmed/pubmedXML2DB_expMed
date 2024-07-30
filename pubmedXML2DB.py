@@ -31,6 +31,7 @@ def process_file(file, count, AuthorIDCounter, AffiliationIDCounter):
     
     if count ==0 :
         create_dynamic_tables(publications_df,authors_df,affiliations_df)
+        # pdb.set_trace()
     
     publications_df = transform_pubications_for_SQL(publications_df)
     authors_df = transform_authors_for_SQL(authors_df)

@@ -322,7 +322,15 @@ def transform_XML(publications_dict, all_affiliations_list, all_authors_list,XML
                 else:
                     key = 'Abstract'
                 parsed_output[key] = each_abstract.text
-                
+
+        #Publication Types
+        # pubTypes =   publications_dict['Article'].find('./PublicationTypeList')
+        # parsed_output['PublicationTypes'] = []
+        # if pubTypes is not None:
+        #     for pubType in pubTypes:
+        #         parsed_output['PublicationTypes'].append(pubType.text)
+        
+        # pdb.set_trace()
 
         #Authors
         AuthorList = publications_dict['Article'].find('./AuthorList')

@@ -10,7 +10,7 @@ import pdb
 
 # Base class for declarative class definitions.
 Base = declarative_base()
-db_path_debug = 'PubMed.db' #Database path DEBUG
+db_path_debug = 'PubMed_june_2024.db' #Database path DEBUG
 
 #Database path
 db_path = db_path_debug
